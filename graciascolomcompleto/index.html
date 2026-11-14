@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Tu Paquete Completo — Escuelita Bíblica</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#1583C4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--azul:#1583C4;--azul-osc:#0E5E8F;--azul-med:#7EC8EC;--azul-cla:#DCF0FB;--oro:#FFC24B;--oro-osc:#E09B1E;
+--coral:#FF6B8A;--menta:#5FD6B4;--menta-cl:#D6F6EC;--crema:#FFFBF2;--tinta:#243447;--gris:#8A97A6;--blanco:#fff;
+--sombra:0 4px 24px rgba(14,94,143,.10)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Nunito',sans-serif;color:var(--tinta);background:var(--crema);line-height:1.6;
+-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;flex-direction:column}
+h1,h2,h3{font-family:'Fredoka',sans-serif;line-height:1.25}
+.container{max-width:1040px;margin:0 auto;padding:0 24px}
+.header{background:var(--blanco);border-bottom:3px solid var(--oro);padding:12px 0}
+.header .container{display:flex;align-items:center;justify-content:center}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-icon{width:42px;height:42px;background:var(--azul);border-radius:50%;display:flex;align-items:center;
+justify-content:center;overflow:hidden}
+.logo-icon img{width:100%;height:100%;object-fit:cover}
+.logo-text{font-family:'Fredoka',sans-serif;font-weight:600;font-size:1.1rem;color:var(--azul)}
+.logo-text em{font-style:normal;color:var(--oro-osc)}
+main{flex:1;padding:48px 0 64px;position:relative;overflow:hidden}
+main::before{content:'';position:absolute;top:-30%;left:-10%;width:120%;height:140%;
+background:radial-gradient(ellipse at 30% 10%,rgba(255,194,75,.16) 0%,transparent 60%);pointer-events:none}
+.inner{position:relative;z-index:1}
+.hero-grac{text-align:center;max-width:680px;margin:0 auto 40px}
+.badge{width:84px;height:84px;border-radius:50%;background:var(--menta);display:flex;align-items:center;
+justify-content:center;margin:0 auto 20px;font-size:42px;color:#fff;box-shadow:0 10px 20px rgba(95,214,180,.35)}
+.hero-grac h1{font-size:clamp(1.5rem,4vw,2rem);margin:0 0 10px}
+.hero-grac h1 span{color:var(--azul)}
+.hero-grac .lead{color:var(--gris);font-size:1.05rem}
+.pack-tag{display:inline-block;background:var(--azul);color:#fff;font-family:'Fredoka',sans-serif;font-weight:600;
+font-size:.8rem;letter-spacing:.5px;text-transform:uppercase;padding:5px 16px;border-radius:30px;margin-bottom:16px}
+.allbox{background:var(--blanco);border:2px solid var(--oro);border-radius:20px;padding:24px 28px;max-width:680px;
+margin:0 auto 44px;text-align:center;box-shadow:var(--sombra)}
+.allbox h2{font-size:1.1rem;color:var(--azul-osc);margin-bottom:6px}
+.allbox p{color:var(--gris);font-size:.9rem;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:22px}
+.item{background:var(--blanco);border:2px solid var(--azul-cla);border-radius:18px;padding:20px 18px 22px;
+text-align:center;display:flex;flex-direction:column;transition:transform .18s,box-shadow .18s}
+.item:hover{transform:translateY(-4px);box-shadow:var(--sombra)}
+.item .thumb{width:100%;max-width:150px;height:auto;margin:0 auto 14px;display:block;
+filter:drop-shadow(0 6px 14px rgba(14,94,143,.18))}
+.item h3{font-size:1rem;color:var(--azul-osc);margin-bottom:4px}
+.item .meta{font-size:.8rem;color:var(--gris);margin-bottom:16px;flex:1}
+.btn{display:inline-block;font-family:'Fredoka',sans-serif;font-weight:600;color:var(--tinta);background:var(--oro);
+border:none;border-radius:60px;text-decoration:none;transition:all .2s;cursor:pointer}
+.btn-sm{font-size:.92rem;padding:11px 22px;width:100%;box-shadow:0 4px 12px rgba(224,155,30,.3)}
+.btn-sm:hover{background:var(--oro-osc);transform:translateY(-1px)}
+.btn-lg{font-size:1.1rem;padding:16px 40px;color:#fff;background:var(--coral);
+box-shadow:0 10px 24px rgba(255,107,138,.4)}
+.btn-lg:hover{background:#e5597a;transform:translateY(-2px)}
+.tip{max-width:680px;margin:44px auto 0;background:var(--menta-cl);border-radius:16px;padding:20px 26px;
+font-size:.92rem;color:var(--azul-osc)}
+.tip strong{color:var(--tinta)}
+.support{text-align:center;margin-top:28px;font-size:.9rem;color:var(--gris)}
+.support a{color:var(--azul);font-weight:700;text-decoration:none}
+footer{background:var(--tinta);color:rgba(255,255,255,.5);text-align:center;padding:20px;font-size:.85rem}
+@media(max-width:640px){.grid{grid-template-columns:repeat(2,1fr);gap:14px}.item{padding:14px 12px 16px}
+.item h3{font-size:.88rem}.item .meta{font-size:.72rem}.btn-sm{font-size:.82rem;padding:10px 12px}}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="logo">
+      <div class="logo-icon"><img src="/favicon.png" alt=""></div>
+      <div class="logo-text">Escuelita <em>Bíblica</em></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container inner">
+
+    <div class="hero-grac">
+      <div class="badge">&#10003;</div>
+      <div class="pack-tag">Paquete Completo</div>
+      <h1>¡Gracias por tu compra! <span>Tu material ya está listo.</span></h1>
+      <p class="lead">Estos son los 13 cuadernos de tu Paquete Completo — 200 páginas listas para imprimir.</p>
+    </div>
+
+    <div class="allbox">
+      <h2>Descarga todo de una vez</h2>
+      <p>Un solo archivo ZIP con 13 cuadernos · 5.7 MB</p>
+      <a class="btn btn-lg" href="/material-eb-2026/Escuelita_Biblica_Completo.zip" download>Descargar todo (ZIP)</a>
+    </div>
+
+    <div class="grid">
+      <div class="item">
+        <img src="/img/img_03_sm.png" alt="Antiguo Testamento" class="thumb">
+        <h3>Antiguo Testamento</h3>
+        <p class="meta">10 historias · 28 págs</p>
+        <a class="btn btn-sm" href="/material-eb-2026/01_Antiguo_Testamento.pdf" download>Descargar PDF</a>
+      </div>
+      <div class="item">
+        <img src="/img/img_04_sm.png" alt="Nuevo Testamento" class="thumb">
+        <h3>Nuevo Testamento</h3>
+        <p class="meta">10 historias · 28 págs</p>
+        <a class="btn btn-sm" href="/material-eb-2026/02_Nuevo_Testamento.pdf" download>Descargar PDF</a>
+      </div>
+      <div class="item">
+        <img src="/img/img_05_sm.png" alt="Actividades Bíblicas" class="thumb">
+        <h3>Actividades Bíblicas</h3>
+        <p class="meta">Sopas, laberintos · 37 págs</p>
+        <a class="btn btn-sm" href="/material-eb-2026/03_Actividades_Biblicas.pdf" download>Descargar PDF</a>
+      </div>
+      <div class="item">
+        <img src="/img/img_06_sm.png" alt="Guía del Maestro" class="thumb">
+        <h3>Guía del Maestro</h3>
+        <p class="meta">Planificación · 15 págs</p>
+        <a class="btn btn-sm" href="/material-eb-2026/04_Guia_del_Maestro.pdf" download>Descargar PDF</a>
+      </div>
+      <div class="item">
+        <img src="/img/img_07_sm.png" alt="Certificados" class="thumb">
+        <h3>Certificados</h3>
+        <p class="meta">3 modelos · 3 págs</p>
+        <a class="btn btn-sm" href="/material-eb-2026/05_Certificados.pdf" download>Descargar PDF</a>
+      </div>
+      <div class="item">
+        <img src="/img/img_08_sm.png" alt="Alfabeto Bíblico" class="thumb">
+        <h3>Alfabeto Bíblico</h3>
+        <p class="meta">A–Z con versículos · 29 págs</p>
+        <a class="btn btn-sm" href="/material-eb-2026/06_Alfabeto_Biblico.pdf" download>Descargar PDF</a>
+      </div>
+      <div class="item">
+        <img src="/img/img_09_sm.png" alt="Plan de Salvación" class="thumb">
+        <h3>Plan de Salvación</h3>
+        <p class="meta">6 lecciones · 10 págs</p>
+        <a class="btn btn-sm" href="/material-eb-2026/07_Plan_de_Salvacion.pdf" download>Descargar PDF</a>
+      </div>
+      <div class="item">
+        <img src="/img/img_10_sm.png" alt="Oración y Devoción" class="thumb">
+        <h3>Oración y Devoción</h3>
+        <p class="meta">6 lecciones · 10 págs</p>
+        <a class="btn btn-sm" href="/material-eb-2026/08_Oracion_y_Devocion.pdf" download>Descargar PDF</a>
+      </div>
+      <div class="item">
+        <img src="/img/img_11_sm.png" alt="El Amor de Dios" class="thumb">
+        <h3>El Amor de Dios</h3>
+        <p class="meta">6 lecciones · 10 págs</p>
+        <a class="btn btn-sm" href="/material-eb-2026/09_El_Amor_de_Dios.pdf" download>Descargar PDF</a>
+      </div>
+      <div class="item">
+        <img src="/img/img_12_sm.png" alt="Día de la Madre" class="thumb">
+        <h3>Día de la Madre</h3>
+        <p class="meta">Actividades · 7 págs</p>
+        <a class="btn btn-sm" href="/material-eb-2026/10_Dia_de_la_Madre.pdf" download>Descargar PDF</a>
+      </div>
+      <div class="item">
+        <img src="/img/img_13_sm.png" alt="Día del Padre" class="thumb">
+        <h3>Día del Padre</h3>
+        <p class="meta">Actividades · 7 págs</p>
+        <a class="btn btn-sm" href="/material-eb-2026/11_Dia_del_Padre.pdf" download>Descargar PDF</a>
+      </div>
+      <div class="item">
+        <img src="/img/img_14_sm.png" alt="Día del Niño" class="thumb">
+        <h3>Día del Niño</h3>
+        <p class="meta">Actividades · 7 págs</p>
+        <a class="btn btn-sm" href="/material-eb-2026/12_Dia_del_Nino.pdf" download>Descargar PDF</a>
+      </div>
+      <div class="item">
+        <img src="/img/img_15_sm.png" alt="Recorta y Juega" class="thumb">
+        <h3>Recorta y Juega</h3>
+        <p class="meta">Rompecabezas · 9 págs</p>
+        <a class="btn btn-sm" href="/material-eb-2026/13_Recorta_y_Juega.pdf" download>Descargar PDF</a>
+      </div>
+    </div>
+
+    <div class="tip">
+      <strong>Consejo:</strong> guarda los archivos en tu celular o computadora apenas los descargues.
+      Son tuyos para siempre y puedes imprimirlos cuantas veces quieras. Si cambias de dispositivo,
+      vuelve a esta misma página para descargarlos de nuevo.
+    </div>
+
+    <p class="support">¿Algún problema con la descarga? Escríbenos por <a href="#">WhatsApp</a> y te ayudamos enseguida.</p>
+
+  </div>
+</main>
+
+<footer>Escuelita Bíblica · Material 100% en español</footer>
+
+</body>
+</html>

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Escuelita Bíblica — 200 páginas de clases bíblicas listas para imprimir</title>
+<meta name="description" content="13 cuadernos PDF con 200 páginas de historias, actividades y manualidades bíblicas para niños, 100% en español. Descarga inmediata desde $5.97 USD.">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#1583C4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="img/hero_mock.webp">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap"></noscript>
+<style>
+:root{
+  --azul:#1583C4; --azul-osc:#0E5E8F; --azul-cla:#EAF6FD; --oro:#FFC24B; --oro-osc:#E09B1E;
+  --coral:#FF6B8A; --menta:#22B48A; --menta-cl:#E3F8F1; --tinta:#1E2B3A; --gris:#5E6B7A;
+  --borde:#E6EDF3; --fondo:#F7FAFC; --r:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito',system-ui,sans-serif;color:var(--tinta);background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:'Fredoka',system-ui,sans-serif;line-height:1.15;font-weight:700}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+.c{text-align:center}
+section{padding:64px 0}
+.alt{background:var(--fondo)}
+.eyebrow{display:inline-block;font-family:'Fredoka',system-ui,sans-serif;font-weight:600;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:var(--menta);margin-bottom:10px}
+h2{font-size:clamp(1.7rem,5vw,2.4rem);margin-bottom:14px}
+h2 .hl{color:var(--azul)}
+.lead{color:var(--gris);font-size:1.08rem;max-width:640px;margin:0 auto}
+
+/* botón */
+.btn{display:block;width:100%;max-width:440px;margin:0 auto;text-align:center;text-decoration:none;font-family:'Fredoka',system-ui,sans-serif;font-weight:700;font-size:1.15rem;letter-spacing:.02em;text-transform:uppercase;color:#fff;background:linear-gradient(180deg,#1E95DA,var(--azul));border-radius:16px;padding:18px 22px;box-shadow:0 8px 0 var(--azul-osc),0 14px 28px rgba(21,131,196,.28);transition:transform .12s,box-shadow .12s}
+.btn:active{transform:translateY(5px);box-shadow:0 3px 0 var(--azul-osc),0 8px 16px rgba(21,131,196,.25)}
+.btn.oro{color:var(--tinta);background:linear-gradient(180deg,#FFD06E,var(--oro));box-shadow:0 8px 0 var(--oro-osc),0 14px 28px rgba(224,155,30,.3)}
+.btn.oro:active{box-shadow:0 3px 0 var(--oro-osc)}
+.btn.pulse{animation:pulse 2.2s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.03)}}
+.under{font-size:.88rem;color:var(--gris);margin-top:14px;text-align:center}
+
+/* barra superior */
+.topbar{background:var(--azul-osc);color:#fff;text-align:center;font-weight:700;font-size:.88rem;padding:9px 14px}
+.topbar b{color:var(--oro)}
+
+/* hero */
+.hero{padding:40px 0 56px;background:radial-gradient(ellipse at 50% 0%,#EAF6FD 0%,#fff 65%)}
+.hero h1{font-size:clamp(2rem,7vw,3.3rem);max-width:820px;margin:0 auto 16px;letter-spacing:-.01em}
+.hero h1 .hl{color:var(--azul)}
+.hero h1 .hl2{color:var(--menta)}
+.hero .lead{margin-bottom:26px}
+.hero-img{max-width:860px;margin:0 auto 30px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:26px}
+.chip{background:#fff;border:1.5px solid var(--borde);border-radius:40px;padding:8px 14px;font-weight:700;font-size:.9rem}
+.chip span{color:var(--azul)}
+
+/* pasos de la lección */
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;margin-top:34px}
+.card{background:#fff;border:1.5px solid var(--borde);border-radius:var(--r);padding:22px;text-align:left}
+.card .ico{font-size:1.8rem;margin-bottom:8px}
+.card .num{font-family:'Fredoka',system-ui,sans-serif;font-weight:600;font-size:.78rem;color:var(--menta);text-transform:uppercase;letter-spacing:.06em}
+.card h3{font-size:1.15rem;margin:4px 0 6px}
+.card p{color:var(--gris);font-size:.95rem}
+
+/* galería */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px}
+.gal button{border:0;padding:0;background:#fff;border-radius:12px;overflow:hidden;cursor:zoom-in;box-shadow:0 6px 18px rgba(20,40,70,.12);transition:transform .15s}
+.gal button:hover{transform:translateY(-3px)}
+.gal small{display:block;font-size:.78rem;color:var(--gris);padding:6px 4px 8px;font-weight:700}
+.lb{position:fixed;inset:0;background:rgba(10,20,30,.88);display:none;align-items:center;justify-content:center;z-index:200;padding:20px}
+.lb.on{display:flex}
+.lb img{max-height:90vh;width:auto;border-radius:8px;background:#fff}
+.lb .x{position:absolute;top:14px;right:18px;color:#fff;font-size:2rem;background:none;border:0;cursor:pointer}
+
+/* contenido */
+.cuadernos{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:34px}
+.cu{background:#fff;border:1.5px solid var(--borde);border-radius:16px;padding:14px 12px 16px;text-align:center}
+.cu img{max-width:110px;margin:0 auto 10px;filter:drop-shadow(0 6px 10px rgba(0,0,0,.15))}
+.cu h4{font-size:.98rem}
+.cu p{font-size:.8rem;color:var(--gris)}
+.cu .tag{display:inline-block;margin-top:6px;font-size:.7rem;font-weight:800;color:var(--azul);background:var(--azul-cla);border-radius:20px;padding:2px 8px}
+.total{display:inline-block;margin-top:28px;background:var(--oro);font-family:'Fredoka',system-ui,sans-serif;font-weight:700;font-size:1.25rem;padding:10px 26px;border-radius:40px}
+
+/* dolor */
+.dolor{background:var(--tinta);color:#fff}
+.dolor h2{color:#fff}
+.dolor .lead{color:#C9D4DF}
+.checks{list-style:none;max-width:560px;margin:30px auto 0;text-align:left}
+.checks li{padding:10px 0 10px 38px;position:relative;font-weight:700;border-bottom:1px solid rgba(255,255,255,.1)}
+.checks li::before{content:'✓';position:absolute;left:0;top:9px;width:26px;height:26px;border-radius:50%;background:var(--menta);color:#fff;display:flex;align-items:center;justify-content:center;font-size:.85rem}
+.dolor .resp{margin-top:26px;font-family:'Fredoka',system-ui,sans-serif;font-size:1.3rem;color:var(--oro)}
+
+/* para quién */
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:34px}
+
+/* precios */
+.precios{background:linear-gradient(180deg,var(--azul-cla),#fff)}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px;max-width:780px;margin:36px auto 0;align-items:start}
+.plan{background:#fff;border:2px solid var(--borde);border-radius:22px;padding:30px 24px;text-align:center;position:relative}
+.plan.top{border:3px solid var(--oro);box-shadow:0 18px 40px rgba(224,155,30,.18)}
+.plan .badge{position:absolute;top:-15px;left:50%;transform:translateX(-50%);background:var(--oro);font-family:'Fredoka',system-ui,sans-serif;font-weight:700;font-size:.82rem;padding:5px 16px;border-radius:20px;white-space:nowrap}
+.plan h3{font-size:1.35rem}
+.plan .sub{color:var(--gris);font-size:.92rem}
+.plan .price{font-family:'Fredoka',system-ui,sans-serif;font-weight:700;font-size:3.6rem;color:var(--azul);line-height:1;margin:16px 0 4px}
+.plan .price small{font-size:1.3rem}
+.plan .per{font-weight:800;color:var(--menta);font-size:.9rem}
+.plan .note{color:var(--gris);font-size:.82rem;margin-bottom:18px}
+.plan ul{list-style:none;text-align:left;margin:0 0 22px}
+.plan li{padding:7px 0 7px 28px;position:relative;font-size:.95rem;border-bottom:1px dashed var(--borde)}
+.plan li::before{content:'✓';position:absolute;left:4px;color:var(--menta);font-weight:800}
+.plan li.no{color:#A9B4BF}
+.plan li.no::before{content:'✕';color:#C5CDD5}
+.plan .mock{max-width:260px;margin:0 auto 6px}
+
+/* garantía */
+.gar{max-width:640px;margin:0 auto;background:#fff;border:2px solid var(--menta);border-radius:22px;padding:32px 26px;text-align:center}
+.gar .sello{width:92px;height:92px;margin:0 auto 14px;border-radius:50%;background:var(--menta);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'Fredoka',system-ui,sans-serif;font-weight:700;line-height:1;box-shadow:0 0 0 8px var(--menta-cl)}
+.gar .sello b{font-size:2rem}
+.gar .sello span{font-size:.7rem;letter-spacing:.05em}
+.gar p{color:var(--gris)}
+
+/* faq */
+.faq{max-width:720px;margin:30px auto 0}
+.faq details{background:#fff;border:1.5px solid var(--borde);border-radius:14px;margin-bottom:10px;padding:0 18px}
+.faq summary{cursor:pointer;list-style:none;font-weight:800;padding:16px 26px 16px 0;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:'+';position:absolute;right:0;top:12px;font-size:1.5rem;color:var(--azul)}
+.faq details[open] summary::after{content:'−'}
+.faq p{color:var(--gris);padding:0 0 16px}
+
+/* final */
+.final{background:linear-gradient(135deg,var(--azul),var(--azul-osc));color:#fff}
+.final h2{color:#fff}
+.final .lead{color:#D7ECF8;margin-bottom:28px}
+footer{background:var(--tinta);color:rgba(255,255,255,.55);text-align:center;font-size:.82rem;padding:26px 20px}
+
+/* whatsapp */
+.wa{position:fixed;right:16px;bottom:16px;z-index:150;display:none;align-items:center;gap:8px;background:#25D366;color:#fff;text-decoration:none;font-weight:800;font-size:.92rem;padding:12px 16px;border-radius:40px;box-shadow:0 8px 22px rgba(0,0,0,.22)}
+.wa svg{width:22px;height:22px}
+
+@media(max-width:640px){
+  section{padding:48px 0}
+  .gal{grid-template-columns:repeat(2,1fr)}
+  .cuadernos{grid-template-columns:repeat(2,1fr)}
+  .wa span{display:none}
+  .wa{padding:14px}
+}
+</style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1509911877644969');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1509911877644969&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel Code -->
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "zdrdoucovl");
+</script>
+<!-- End Microsoft Clarity -->
+</head>
+<body>
+
+<div class="topbar">📥 Material digital · <b>Descarga inmediata</b> después del pago</div>
+
+<!-- HERO -->
+<section class="hero c">
+  <div class="wrap">
+    <h1><span class="hl">200 páginas</span> de clases bíblicas listas para imprimir y enseñar <span class="hl2">jugando</span></h1>
+    <p class="lead">Historias, versículos, sopas de letras, laberintos, alfabeto y manualidades para niños de 3 a 12 años. 100% en español.</p>
+    <img class="hero-img" src="img/hero_mock.webp" width="1100" height="578" alt="Páginas reales del material Escuelita Bíblica" fetchpriority="high">
+    <a href="#precios" class="btn pulse">¡Quiero mi material!</a>
+    <p class="under">⚡ Acceso inmediato · Imprime cuantas veces quieras</p>
+    <div class="chips">
+      <div class="chip"><span>13</span> cuadernos PDF</div>
+      <div class="chip"><span>200</span> páginas</div>
+      <div class="chip">De <span>3 a 12</span> años</div>
+      <div class="chip">Funciona en <span>blanco y negro</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CÓMO FUNCIONA CADA LECCIÓN -->
+<section class="alt c">
+  <div class="wrap">
+    <div class="eyebrow">Cada historia, una clase completa</div>
+    <h2>Así funciona <span class="hl">cada lección</span></h2>
+    <p class="lead">No son hojas sueltas. Cada historia viene armada para que solo imprimas y enseñes.</p>
+    <div class="grid4">
+      <div class="card"><div class="ico">📖</div><div class="num">Paso 1</div><h3>La historia</h3><p>Contada en lenguaje de niño, con ilustración y la cita bíblica.</p></div>
+      <div class="card"><div class="ico">✨</div><div class="num">Paso 2</div><h3>El versículo</h3><p>Un versículo clave (Reina-Valera) para memorizar en clase.</p></div>
+      <div class="card"><div class="ico">✏️</div><div class="num">Paso 3</div><h3>Las actividades</h3><p>Preguntas, sopas de letras, completar, colorear y recortar.</p></div>
+      <div class="card"><div class="ico">🙏</div><div class="num">Paso 4</div><h3>Para pensar</h3><p>Una reflexión corta para llevar la enseñanza a la vida del niño.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PÁGINAS REALES -->
+<section class="c">
+  <div class="wrap">
+    <div class="eyebrow">Mira por dentro</div>
+    <h2>Páginas <span class="hl">reales</span> del material</h2>
+    <p class="lead">Toca cualquier página para verla en grande.</p>
+    <div class="gal">
+      <button data-src="img/pag_g1.webp"><img src="img/pag_g1.webp" loading="lazy" alt="Historia de la Creación"><small>Historia · La Creación</small></button>
+      <button data-src="img/pag_g3.webp"><img src="img/pag_g3.webp" loading="lazy" alt="El nacimiento de Jesús"><small>Historia · Nacimiento de Jesús</small></button>
+      <button data-src="img/pag_g4.webp"><img src="img/pag_g4.webp" loading="lazy" alt="Sopa de letras"><small>Sopa de letras</small></button>
+      <button data-src="img/pag_g8.webp"><img src="img/pag_g8.webp" loading="lazy" alt="Página para colorear"><small>Para colorear</small></button>
+      <button data-src="img/pag_g6.webp"><img src="img/pag_g6.webp" loading="lazy" alt="Alfabeto bíblico letra A"><small>Alfabeto bíblico</small></button>
+      <button data-src="img/pag_g7.webp"><img src="img/pag_g7.webp" loading="lazy" alt="Encuentra las 7 diferencias"><small>7 diferencias</small></button>
+      <button data-src="img/pag_g5.webp"><img src="img/pag_g5.webp" loading="lazy" alt="Memoria bíblica"><small>Juego de memoria</small></button>
+      <button data-src="img/pag_g9.webp"><img src="img/pag_g9.webp" loading="lazy" alt="Plan de Salvación"><small>Plan de Salvación</small></button>
+    </div>
+  </div>
+</section>
+
+<!-- CONTENIDO -->
+<section class="alt c" id="contenido">
+  <div class="wrap">
+    <div class="eyebrow">Todo organizado por tema</div>
+    <h2>Los <span class="hl">13 cuadernos</span> que vas a recibir</h2>
+    <div class="cuadernos">
+      <div class="cu"><img src="img/img_03_sm.webp" loading="lazy" alt="Antiguo Testamento"><h4>Antiguo Testamento</h4><p>10 historias · 28 págs</p><span class="tag">Inicial</span></div>
+      <div class="cu"><img src="img/img_08_sm.webp" loading="lazy" alt="Alfabeto Bíblico"><h4>Alfabeto Bíblico</h4><p>A–Z con versículos · 29 págs</p><span class="tag">Inicial</span></div>
+      <div class="cu"><img src="img/img_05_sm.webp" loading="lazy" alt="Actividades Bíblicas"><h4>Actividades Bíblicas</h4><p>Sopas, laberintos · 37 págs</p><span class="tag">Inicial</span></div>
+      <div class="cu"><img src="img/img_04_sm.webp" loading="lazy" alt="Nuevo Testamento"><h4>Nuevo Testamento</h4><p>10 historias · 28 págs</p></div>
+      <div class="cu"><img src="img/img_06_sm.webp" loading="lazy" alt="Guía del Maestro"><h4>Guía del Maestro</h4><p>Planificación + dinámicas · 15 págs</p></div>
+      <div class="cu"><img src="img/img_09_sm.webp" loading="lazy" alt="Plan de Salvación"><h4>Plan de Salvación</h4><p>6 lecciones · 10 págs</p></div>
+      <div class="cu"><img src="img/img_10_sm.webp" loading="lazy" alt="Oración y Devoción"><h4>Oración y Devoción</h4><p>6 lecciones · 10 págs</p></div>
+      <div class="cu"><img src="img/img_11_sm.webp" loading="lazy" alt="El Amor de Dios"><h4>El Amor de Dios</h4><p>6 lecciones · 10 págs</p></div>
+      <div class="cu"><img src="img/img_15_sm.webp" loading="lazy" alt="Recorta y Juega"><h4>Recorta y Juega</h4><p>Diferencias, rompecabezas · 9 págs</p></div>
+      <div class="cu"><img src="img/img_12_sm.webp" loading="lazy" alt="Día de la Madre"><h4>Día de la Madre</h4><p>Actividades especiales · 7 págs</p></div>
+      <div class="cu"><img src="img/img_13_sm.webp" loading="lazy" alt="Día del Padre"><h4>Día del Padre</h4><p>Actividades especiales · 7 págs</p></div>
+      <div class="cu"><img src="img/img_14_sm.webp" loading="lazy" alt="Día del Niño"><h4>Día del Niño</h4><p>Actividades especiales · 7 págs</p></div>
+      <div class="cu"><img src="img/img_07_sm.webp" loading="lazy" alt="Certificados"><h4>Certificados</h4><p>3 modelos para entregar · 3 págs</p></div>
+    </div>
+    <div class="total">13 PDFs · 200 páginas</div>
+  </div>
+</section>
+
+<!-- DOLOR -->
+<section class="dolor c">
+  <div class="wrap">
+    <h2>¿Cuántas horas pasaste este mes armando la clase desde cero?</h2>
+    <p class="lead">Buscar actividades sueltas, traducir, adaptar, imprimir… y aun así los niños se distraen a los 5 minutos.</p>
+    <ul class="checks">
+      <li>Clase lista en minutos: imprimes y enseñas</li>
+      <li>Los niños participan en vez de solo escuchar</li>
+      <li>Todo conectado a una historia de la Biblia</li>
+      <li>Material para meses sin repetir</li>
+      <li>Hecho en español, no traducido</li>
+    </ul>
+    <p class="resp">Menos tiempo preparando. Más tiempo enseñando.</p>
+  </div>
+</section>
+
+<!-- PARA QUIÉN -->
+<section class="c">
+  <div class="wrap">
+    <div class="eyebrow">¿Es para mí?</div>
+    <h2>Hecho para <span class="hl">ti</span> que…</h2>
+    <div class="grid3">
+      <div class="card"><div class="ico">⛪</div><h3>Enseñas en la Escuela Dominical</h3><p>Tienes la clase de cada domingo resuelta.</p></div>
+      <div class="card"><div class="ico">🧒</div><h3>Lideras el Ministerio Infantil</h3><p>Un mismo material para todo el equipo de maestros.</p></div>
+      <div class="card"><div class="ico">🏠</div><h3>Eres mamá o papá</h3><p>Momentos en familia con la Biblia, lejos de las pantallas.</p></div>
+      <div class="card"><div class="ico">📿</div><h3>Das catequesis</h3><p>Contenido bíblico que sirve en cualquier contexto cristiano.</p></div>
+      <div class="card"><div class="ico">⏰</div><h3>Tienes poco tiempo</h3><p>No necesitas preparar nada desde cero.</p></div>
+      <div class="card"><div class="ico">🎨</div><h3>Quieres clases más creativas</h3><p>Juegos, recortes y colores que mantienen la atención.</p></div>
+    </div>
+    <div style="margin-top:36px"><a href="#precios" class="btn">Ver los paquetes</a></div>
+  </div>
+</section>
+
+<!-- PRECIOS -->
+<section class="precios c" id="precios">
+  <div class="wrap">
+    <div class="eyebrow">Pago único · Sin mensualidades</div>
+    <h2>Elige tu <span class="hl">paquete</span></h2>
+    <div class="pgrid">
+      <div class="plan">
+        <h3>Paquete Inicial</h3>
+        <p class="sub">Para empezar con lo esencial</p>
+        <div class="price">$5<small>.97</small></div>
+        <div class="per">≈ $1.99 por cuaderno</div>
+        <p class="note">USD · pago único</p>
+        <ul>
+          <li>Antiguo Testamento (28 págs)</li>
+          <li>Alfabeto Bíblico (29 págs)</li>
+          <li>Actividades Bíblicas (37 págs)</li>
+          <li class="no">Nuevo Testamento</li>
+          <li class="no">Guía del Maestro y 9 cuadernos más</li>
+        </ul>
+        <a href="https://pay.mycheckoutt.com/01a1dc2c-ce36-7178-a29f-176ee0703ce0?ref=" class="btn" style="font-size:1rem">Quiero el Inicial</a>
+      </div>
+      <div class="plan top">
+        <div class="badge">⭐ MEJOR VALOR</div>
+        <img class="mock" src="img/img_19_sm.webp" loading="lazy" alt="Los 13 cuadernos de Escuelita Bíblica">
+        <h3>Paquete Completo</h3>
+        <p class="sub">Los 13 cuadernos · 200 páginas</p>
+        <div class="price">$12<small>.97</small></div>
+        <div class="per">≈ $0.99 por cuaderno — la mitad de precio</div>
+        <p class="note">USD · pago único</p>
+        <ul>
+          <li>Los 3 cuadernos del Inicial</li>
+          <li>Nuevo Testamento (28 págs)</li>
+          <li>Guía del Maestro con dinámicas</li>
+          <li>Plan de Salvación, Oración y Amor de Dios</li>
+          <li>Día de la Madre, del Padre y del Niño</li>
+          <li>Recorta y Juega + Certificados</li>
+        </ul>
+        <a href="https://pay.mycheckoutt.com/01a1dc45-fe29-7185-86c8-75e338ea8021?ref=" class="btn oro pulse">¡Quiero el Completo!</a>
+      </div>
+    </div>
+    <p class="under">🔒 Pago seguro · Tarjeta y métodos locales según tu país · Precio convertido a tu moneda</p>
+  </div>
+</section>
+
+<!-- GARANTÍA -->
+<section class="alt">
+  <div class="wrap">
+    <div class="gar">
+      <div class="sello"><b>30</b><span>DÍAS</span></div>
+      <h2 style="font-size:1.7rem">Garantía de 30 días</h2>
+      <p>Compras, descargas y conoces el material. Si en 30 días decides que no es para ti, pides el reembolso y te devolvemos el 100% de tu dinero.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ACCESO -->
+<section class="c">
+  <div class="wrap">
+    <div class="eyebrow">Simple y rápido</div>
+    <h2>Cómo recibes <span class="hl">tu material</span></h2>
+    <div class="grid4">
+      <div class="card"><div class="ico">🛒</div><div class="num">1</div><h3>Elige tu paquete</h3><p>Haz clic en el botón y completa el pago.</p></div>
+      <div class="card"><div class="ico">📧</div><div class="num">2</div><h3>Recibe el acceso</h3><p>Al confirmar el pago se abre la página de descarga.</p></div>
+      <div class="card"><div class="ico">📥</div><div class="num">3</div><h3>Descarga</h3><p>Guarda los PDF en tu celular o computadora.</p></div>
+      <div class="card"><div class="ico">🖨️</div><div class="num">4</div><h3>Imprime y enseña</h3><p>Cuantas veces quieras, con cada grupo nuevo.</p></div>
+    </div>
+    <div style="margin-top:36px"><a href="#precios" class="btn">Quiero empezar hoy</a></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="alt">
+  <div class="wrap c">
+    <h2>Preguntas <span class="hl">frecuentes</span></h2>
+    <div class="faq" style="text-align:left">
+      <details><summary>¿El material es digital o físico?</summary><p>Es 100% digital. Recibes archivos PDF listos para imprimir. No se envía nada por correo postal.</p></details>
+      <details><summary>¿Cómo y cuándo lo recibo?</summary><p>Apenas se confirma el pago, accedes a la página de descarga con todos los archivos.</p></details>
+      <details><summary>¿Necesito impresora a color?</summary><p>No. Todo funciona impreso en blanco y negro, y las páginas para colorear están pensadas para eso.</p></details>
+      <details><summary>¿Para qué edades es?</summary><p>De 3 a 12 años. Los pequeños colorean y recortan; los mayores resuelven sopas de letras, laberintos y completan versículos.</p></details>
+      <details><summary>¿Sirve para cualquier iglesia?</summary><p>Sí. Está basado en la Biblia (Reina-Valera) y sirve para contextos evangélicos, católicos o interdenominacionales.</p></details>
+      <details><summary>¿Es pago único o mensualidad?</summary><p>Pago único. Los archivos son tuyos para siempre.</p></details>
+      <details><summary>¿Y si no me gusta?</summary><p>Tienes 30 días de garantía. Pides el reembolso y te devolvemos el 100%.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final c">
+  <div class="wrap">
+    <h2>Tu próxima clase puede ser la que los niños no olviden</h2>
+    <p class="lead">200 páginas listas. Tú solo imprimes.</p>
+    <a href="#precios" class="btn oro pulse">¡Quiero mi Escuelita Bíblica!</a>
+    <p class="under" style="color:#D7ECF8">Acceso inmediato · 30 días de garantía · Pago único</p>
+  </div>
+</section>
+
+<footer>© 2026 Escuelita Bíblica · Material educativo cristiano para uso personal y en tu iglesia.</footer>
+
+<a class="wa" id="wa" href="#" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.7 11.7 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
+  <span>¿Dudas? Escríbenos</span>
+</a>
+
+<div class="lb" id="lb"><button class="x" aria-label="Cerrar">×</button><img alt=""></div>
+
+<script>
+// Número de WhatsApp (solo dígitos, con código de país). Vacío = botón oculto.
+var WA_NUM = '';
+var WA_MSG = 'Hola, tengo una duda sobre Escuelita Bíblica';
+(function(){
+  var wa=document.getElementById('wa');
+  if(WA_NUM){ wa.href='https://wa.me/'+WA_NUM+'?text='+encodeURIComponent(WA_MSG); wa.style.display='flex';
+    wa.addEventListener('click',function(){ try{ if(window.fbq) fbq('track','Contact'); if(window.clarity) clarity('event','whatsapp_click'); }catch(e){} }); }
+})();
+
+// Galería
+(function(){
+  var lb=document.getElementById('lb'), im=lb.querySelector('img');
+  document.querySelectorAll('.gal button').forEach(function(b){ b.addEventListener('click',function(){ im.src=b.dataset.src; lb.classList.add('on'); }); });
+  lb.addEventListener('click',function(){ lb.classList.remove('on'); });
+})();
+
+// Scroll suave para anclas
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
+  if(a.getAttribute('href').length<2) return;
+  a.addEventListener('click',function(e){ var t=document.querySelector(a.getAttribute('href')); if(t){ e.preventDefault(); t.scrollIntoView({behavior:'smooth',block:'start'}); } });
+});
+
+// InitiateCheckout (Meta Pixel) + Clarity
+(function(){
+  var PRECIOS = { '01a1dc2c-ce36-7178-a29f-176ee0703ce0': {v:5.97, n:'Paquete Inicial'},
+                  '01a1dc45-fe29-7185-86c8-75e338ea8021': {v:12.97, n:'Paquete Completo'} };
+  document.querySelectorAll('a[href*="mycheckoutt.com"]').forEach(function(a){
+    a.addEventListener('click', function(){
+      try {
+        var id=(a.href.match(/mycheckoutt\.com\/([0-9a-f-]+)/)||[])[1];
+        var p=PRECIOS[id]||{v:0,n:'Paquete'};
+        var eid='ic_'+Date.now()+'_'+Math.random().toString(36).slice(2,8);
+        if(window.fbq) fbq('track','InitiateCheckout',{value:p.v,currency:'USD',content_name:p.n,content_type:'product',num_items:1},{eventID:eid});
+        if(window.clarity) clarity('event','checkout_click_'+(p.v<10?'inicial':'completo')+'_v2');
+      } catch(e){}
+    },{passive:true});
+  });
+})();
+</script>
+</body>
+</html>
